@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 gem 'airbrake'
 gem 'resque'
 gem 'resque_mailer'
+gem 'brakeman'
 
 gem 'newrelic_rpm'
 
@@ -18,6 +19,7 @@ gem "pg", ">= 0.15.0"
 gem "haml-rails", ">= 0.4"
 
 group :development do
+  gem 'pry' 
   gem "guard-bundler", ">= 1.0.0"
   gem "guard-rails", ">= 0.4.0"
   gem "guard-rspec", ">= 2.5.2"

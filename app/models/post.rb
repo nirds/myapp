@@ -7,6 +7,7 @@ private
 
   def send_new_post_email
     AdminMailer.new_post(self).deliver
+    binding.pry
   end
 
 end
