@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 
 gem 'airbrake'
-
+gem 'resque'
+gem 'resque_mailer'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
