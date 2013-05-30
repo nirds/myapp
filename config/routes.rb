@@ -1,4 +1,7 @@
 Myapp::Application.routes.draw do
+  resources :topics
+
+
   authenticated :user do
     root :to => 'home#index'
   end
