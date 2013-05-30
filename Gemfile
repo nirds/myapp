@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.13'
+
+gem 'airbrake'
+
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -9,13 +13,18 @@ gem 'jquery-rails'
 gem "thin", ">= 1.5.0"
 gem "pg", ">= 0.15.0"
 gem "haml-rails", ">= 0.4"
+
+group :development do
+  gem "guard-bundler", ">= 1.0.0"
+  gem "guard-rails", ">= 0.4.0"
+  gem "guard-rspec", ">= 2.5.2"
+end
+
 gem "html2haml", ">= 1.0.1", :group => :development
 gem "rspec-rails", ">= 2.12.2", :group => [:development, :test]
 gem "database_cleaner", ">= 1.0.0.RC1", :group => :test
 gem "email_spec", ">= 1.4.0", :group => :test
-gem "guard-bundler", ">= 1.0.0", :group => :development
-gem "guard-rails", ">= 0.4.0", :group => :development
-gem "guard-rspec", ">= 2.5.2", :group => :development
+
 gem "rb-inotify", ">= 0.9.0", :group => :development, :require => false
 gem "rb-fsevent", ">= 0.9.3", :group => :development, :require => false
 gem "rb-fchange", ">= 0.0.6", :group => :development, :require => false
