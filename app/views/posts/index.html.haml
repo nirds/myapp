@@ -14,7 +14,7 @@
       %td= post.topic_id
       %td= post.user_id
       %td
-        = post.content
+        = post.content.to_s.html_safe
       %td= link_to 'Show', post
       %td= link_to 'Edit', edit_post_path(post)
       %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
